@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 from sheets import add_rows_to_sheet, init_google_sheets
-from texts import ONBOARDING_TEXT
+from texts import ONBOARDING_TEXT, SYSTEM_PROMPT
 from datetime import datetime, timedelta # Para timestamp das mensagens
 import uuid # Para gerar IDs únicos
 
@@ -72,9 +72,15 @@ if prompt := st.chat_input("Dúvidas de código?"):
 
     # Resposta do assistente
     with st.chat_message("assistant"):
+        # Construção da lista de mensagens com o System Prompt, criando uma lista nova que começa com o System Prompt e concatena o histórico
+        messages_api = [{"role": "system", "content": SYSTEM_PROMPT}] + [
+            {"role": m["role"], "content": m["content"]} 
+            for m in st.session_state.messages
+        ]
+
         stream = client.chat.completions.create(
             model=st.session_state["openai_model"],
-            messages=[{"role": m["role"], "content": m["content"]} for m in st.session_state.messages],
+            messages=messages_api,
             stream=True,
             stream_options={"include_usage": True},
         ) # Solicita resposta em streaming
