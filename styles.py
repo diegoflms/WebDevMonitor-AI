@@ -9,11 +9,14 @@ def get_main_styles():
 <style>
     /* 1. Elementos Globais e Limpeza */
     .stDeployButton, [data-testid="stMainMenu"], [data-testid="stStatusWidget"], 
-    footer, [data-testid="stDecoration"] {{
+    footer, [data-testid="stDecoration"],  {{
         visibility: hidden;
         display: none;
     }}
     .block-container {{ padding-top: 2rem !important; }}
+    #MainMenu {{ visibility: hidden; }}
+    footer {{ visibility: hidden; }}
+    #GithubIcon {{ visibility: hidden; }}
 
     /* 2. Sidebar */
     [data-testid="stSidebar"] {{ background-color: {BLUE} !important; }}
@@ -48,6 +51,35 @@ def get_main_styles():
     /* 5. Avatares do Chat */
     [data-testid="stChatMessageAvatarAssistant"] {{ background-color: {ORANGE} !important; }}
     [data-testid="stChatMessageAvatarUser"] {{ background-color: {BLUE} !important; }}
+
+    /* 6. Snippet do Fórum */
+    div[data-testid="stToolbar"] {{
+        visibility: hidden;
+        height: 0%;
+        position: fixed;
+    }}
+    div[data-testid="stDecoration"] {{
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+    }}
+    div[data-testid="stStatusWidget"] {{
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+    }}
+    #MainMenu {{
+    visibility: hidden;
+    height: 0%;
+    }}
+    header {{
+    visibility: hidden;
+    height: 0%;
+    }}
+    footer {{
+    visibility: hidden;
+    height: 0%;
+    }}
 </style>
 """
 

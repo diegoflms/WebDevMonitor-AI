@@ -9,13 +9,13 @@ from styles import *
 # --- CONFIGURAÇÃO INICIAL ---
 init_session_state() # Garante que as variáveis de estado existam antes de qualquer coisa
 st.markdown(get_main_styles(), unsafe_allow_html=True) # Aplica os estilos principais
-st.title("WebDevMonitor AI") # Título da aplicação
 st.set_page_config(page_title="WebDevMonitor AI", page_icon="🚀", layout="wide") # Configuração da visual página
 
 if not st.session_state["authenticated"]: # Lógica de autenticação
     login_screen(st.secrets["PASSWORD"])
     st.stop()
 
+st.title("WebDevMonitor AI") # Título da aplicação
 client, tab = load_connections() # Inicializa conexões com OpenAI e Google Sheets
 
 if st.session_state["authenticated"]: # Renderiza a sidebar
