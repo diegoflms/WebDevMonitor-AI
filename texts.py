@@ -1,16 +1,14 @@
-ONBOARDING_TEXT = """
-# 🤖 Bem-vindo ao Tutor de Web Dev!
+# Primeira mensagem de boas-vindas do assistente
+FIRST_MSG = "Olá! Sou seu assistente para a disciplina de desenvolvimento web! Pergunte-me qualquer coisa relacionada a programação e farei o meu melhor para ajudar! Para mais informações, consulte a barra lateral."
+
+# Introdução na sidebar
+INTRO_TEXT = """
+# :robot: Bem-vindo ao Tutor de Web Dev!
 
 O objetivo do sistema é te ajudar a tirar dúvidas de **Desenvolvimento Web** durante a disciplina.
-### ⚙️ Melhorando sua Experiência (Visual)
-Para visualizar melhor os blocos de código, recomendo ajustar o Streamlit:
-1. Vá no menu "três pontinhos" (⋮) no canto superior direito.
-2. Clique em **Settings**.
-3. Ative a opção **Wide mode**.
-4. (Opcional) Escolha o **Theme** que preferir (Dark/Light).
-
----
-## 🧠 Como funciona?
+"""
+# Texto de onboarding na sidebar
+ONBOARDING_TEXT = """## 🧠 Como funciona?
 Este sistema utiliza o modelo **GPT-4o-mini** da OpenAI. Ele é otimizado através de engenharia de prompt para responder questões técnicas de programação com rapidez e precisão.
 
 **O que ele faz:**
@@ -24,7 +22,7 @@ Este sistema utiliza o modelo **GPT-4o-mini** da OpenAI. Ele é otimizado atrav�
 * Não tem conversa sobre assuntos não relacionados à computação.
 
 ---
-### 💡 Dicas de Prompt
+### ⚙️ Dicas de Prompt
 Para obter respostas melhores:
 * **Seja Específico:** em vez de "Não funciona", diga "Estou recebendo o erro X na linha Y".
 * **Forneça Contexto:** cole o trecho do código que está dando problema.
@@ -33,23 +31,24 @@ Para obter respostas melhores:
 
 ---
 
-### ⚠️ Avisos Importantes (Leia com atenção)
-**1. Alucinações de IA**
+### 🚨 Avisos Importantes (Leia com atenção)
+**1. Alucinações de IA**<br>
 A Inteligência Artificial pode errar. **Sempre teste e valide** o código sugerido antes de colocar no seu projeto final.
 
-**2. Privacidade e Segurança**
+**2. Privacidade e Segurança**<br>
 **NÃO** cole senhas, chaves de API ou dados pessoais no chat. As conversas são anonimizadas e depois salvas para fins de análise da ferramenta, mas por segurança, trate este chat como um ambiente público.
 
-**3. Uso Consciente**
+**3. Uso Consciente**<br>
 Este projeto é autofinanciado. Use à vontade para aprender! Apenas evite spam ou perguntas repetitivas desnecessárias.
 
 ---
-### 👍 Feedback
+### 👍🏽 Feedback
 Ao final das respostas, você pode ver um botão de "Joinha". Por favor, use-o! Isso ajuda a medir a qualidade do assistente para uma análise posterior.
 
 **Bons estudos! 🚀**
 """
 
+# Prompt do sistema para o modelo de IA, definindo o comportamento e as diretrizes de interação
 SYSTEM_PROMPT = """**Você é um tutor de programação Web e Mobile experiente, animado e encorajador.** Seu objetivo principal é guiar os alunos no domínio de tecnologias como HTML, CSS, JavaScript, desenvolvimento server-side, bancos de dados para web, design de interface (UI), persistência de dados e integração de APIs em dispositivos móveis.
 
   **Diretrizes de Interação:**
