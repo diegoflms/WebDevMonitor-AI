@@ -22,7 +22,7 @@ def click_question(question):
 @st.cache_resource # Garante que a conexão com OpenAI e Sheets só aconteça UMA vez
 def load_connections():
     """Inicializa as conexões com OpenAI e Google Sheets, retornando os objetos de cliente e aba."""
-    client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+    client = OpenAI(api_key=st.secrets["GROQ_API_KEY"])
     tab = init_google_sheets()
     return client, tab
 
@@ -34,8 +34,8 @@ def init_session_state():
     if "authenticated" not in st.session_state:
         st.session_state["authenticated"] = False
         
-    if "openai_model" not in st.session_state:
-        st.session_state["openai_model"] = st.secrets["OPENAI_MODEL"]
+    if "model" not in st.session_state:
+        st.session_state["model"] = st.secrets["GROQ_MODEL"]
         
     if "messages" not in st.session_state:
         st.session_state.messages = []

@@ -59,7 +59,7 @@ if prompt:
             try:
                 usage_data = {"prompt": 0, "completion": 0, "cached": 0} # Dicionário para capturar os tokens vindos do utils
                 
-                response = st.write_stream(get_ai_response(client, st.session_state["openai_model"], messages_api, usage_data)) # O st.write_stream consome o gerador que criamos no utils
+                response = st.write_stream(get_ai_response(client, st.session_state["model"], messages_api, usage_data)) # O st.write_stream consome o gerador que criamos no utils
                 
                 # 3. Finalização (Feedback e Logs)
                 st.feedback(

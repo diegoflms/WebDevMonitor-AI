@@ -9,7 +9,7 @@ O objetivo do sistema é te ajudar a tirar dúvidas de **Desenvolvimento Web** d
 """
 # Texto de onboarding na sidebar
 ONBOARDING_TEXT = """## 🧠 Como funciona?
-Este sistema utiliza o modelo **GPT-4o-mini** da OpenAI. Ele é otimizado através de engenharia de prompt para responder questões técnicas de programação com rapidez e precisão.
+Este sistema é otimizado através de engenharia de prompt para responder questões técnicas de desenvolvimento web com rapidez e precisão.
 
 **O que ele faz:**
 * Explica conceitos de código.
