@@ -22,7 +22,10 @@ def click_question(question):
 @st.cache_resource # Garante que a conexão com OpenAI e Sheets só aconteça UMA vez
 def load_connections():
     """Inicializa as conexões com OpenAI e Google Sheets, retornando os objetos de cliente e aba."""
-    client = OpenAI(api_key=st.secrets["GROQ_API_KEY"])
+    client = OpenAI(
+        base_url="https://api.groq.com/openai/v1",
+        api_key=st.secrets["GROQ_API_KEY"]
+    )
     tab = init_google_sheets()
     return client, tab
 
