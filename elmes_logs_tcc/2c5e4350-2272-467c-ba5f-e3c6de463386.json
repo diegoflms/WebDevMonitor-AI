@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Meu loop for em JS está dando erro de sintaxe, o que eu faço?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Um erro de sintaxe no loop for pode ser frustrante, mas é uma ótima oportunidade para aprender e melhorar!\n\nAntes de mais nada, você poderia me mostrar o código do seu loop for que está dando erro de sintaxe? Isso ajudaria muito a entender melhor o problema.\n\nAlém disso, você poderia me dizer qual é o erro exato que o console está mostrando? Isso pode dar uma pista importante sobre o que está acontecendo.\n\nEnquanto isso, vamos pensar juntos sobre como um loop for em JavaScript é estruturado. Um loop for básico tem a seguinte estrutura:\n```javascript\nfor (_______; _______; _______) {\n  // código a ser executado\n}\n```\nVocê consegue me dizer quais são as três partes principais de um loop for e o que elas representam?\n\nVamos trabalhar juntos para identificar o problema e encontrar uma solução!",
+            "reasoning": ""
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "O que é uma API e como conecto no meu app mobile?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Uma ótima pergunta para começarmos!\n\nAntes de mergulharmos nos detalhes, gostaria de saber: você já tem alguma experiência com desenvolvimento de aplicações móveis ou com APIs? Qual é o seu nível de conhecimento sobre o assunto?\n\nUma API (Application Programming Interface) é basicamente uma ponte que permite que diferentes sistemas ou aplicações se comuniquem entre si. No contexto do desenvolvimento web e mobile, as APIs são usadas para fornecer dados ou serviços a uma aplicação, permitindo que ela acesse informações ou funcionalidades de outros sistemas.\n\nAgora, sobre como conectar uma API ao seu app mobile... Existem várias etapas envolvidas nesse processo. Você já pensou em qual tipo de API você gostaria de conectar? É uma API pública, como a do OpenWeatherMap, ou é uma API privada, criada por você mesmo ou pela sua empresa?\n\nVamos começar com os passos básicos:\n\n1. **Entenda a API**: Qual é o propósito da API? Quais dados ou serviços ela fornece?\n2. **Escolha a tecnologia**: Qual é a tecnologia que você está usando para desenvolver o seu app mobile? (Ex: React Native, Flutter, Kotlin, etc.)\n3. **Autenticação**: Como a API autentica as requisições? (Ex: token, username e senha, etc.)\n4. **Requisições**: Como você fará requisições à API? (Ex: GET, POST, PUT, DELETE, etc.)\n\nVamos parar por aqui por enquanto. Qual é o seu próximo passo? Você gostaria de explorar mais sobre como escolher a API certa para o seu app ou como lidar com a autenticação? Ou talvez você tenha alguma dúvida específica sobre como conectar a API ao seu app?",
+            "reasoning": ""
+        }
+    ]
+}

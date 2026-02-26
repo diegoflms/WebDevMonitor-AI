@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Explique Flexbox usando uma analogia."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Que ótimo tema! Vamos mergulhar no mundo do Flexbox de uma maneira divertida e fácil de entender.\n\nImagine que você está organizando uma festa e precisa dispor os convidados em uma sala de forma que todos sejam vistos e tenham espaço suficiente para se mover. Cada convidado representa um elemento HTML, como um botão, uma imagem ou um parágrafo de texto.\n\nAgora, imagine que a sala é o container (ou pai) desses elementos. O Flexbox é como um sistema de gerenciamento de convidados que ajuda a organizar e distribuir esses elementos dentro da sala de forma eficiente e flexível.\n\n**Direção**: Imagine que você pode escolher a direção em que os convidados se alinham na sala. Você pode escolher se eles se alinham em uma linha (horizontal) ou em uma coluna (vertical). Isso é semelhante à propriedade `flex-direction` no Flexbox, que pode ser `row` (linha), `column` (coluna), `row-reverse` (linha reversa) ou `column-reverse` (coluna reversa).\n\n**Justificação**: Agora, imagine que você precisa justificar os convidados dentro da sala para que eles fiquem espaçados de forma uniforme. Você pode escolher se eles se alinham no início, no meio ou no final da sala. Isso é semelhante à propriedade `justify-content` no Flexbox, que pode ser `flex-start`, `center`, `flex-end`, `space-between`, `space-around` ou `space-evenly`.\n\n**Alinhamento**: Além disso, você também pode escolher como os convidados se alinham em relação à linha ou coluna. Eles podem se alinhar no topo, no meio ou na base. Isso é semelhante à propriedade `align-items` no Flexbox, que pode ser `flex-start`, `center`, `flex-end`, `baseline` ou `stretch`.\n\n**Flexibilidade**: E, por fim, imagine que a sala pode mudar de tamanho dependendo do número de convidados. O Flexbox permite que os elementos sejam flexíveis e se adaptem ao tamanho do container, sem que você precise especificar um tamanho fixo para cada elemento.\n\nEssa analogia ilustra como o Flexbox pode ser usado para criar layouts flexíveis e responsivos em páginas web, permitindo que os elementos sejam organizados e distribuídos de forma eficiente e atraente.\n\nAgora, quais são os seus principais desafios ao trabalhar com Flexbox? Você tem alguma dúvida específica sobre como aplicar esses conceitos em um projeto?",
+            "reasoning": ""
+        }
+    ]
+}

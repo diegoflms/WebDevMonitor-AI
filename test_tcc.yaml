@@ -1,0 +1,146 @@
+# 1. Configurações Globais
+globals:
+  concurrency: 1
+  recursion_limit: 10
+  retry:
+    attempt: 5
+    interval: 30
+  memory:
+    path: ./elmes_logs_tcc
+
+# 2. Definição dos Modelos
+models:
+  groq_model: # O Tutor
+    type: openai
+    api_key: "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"
+    api_base: https://api.groq.com/openai/v1
+    model: llama-3.3-70b-versatile
+    kargs:
+      temperature: 0.3
+
+  judge_model: # O Juiz Crítico
+    type: openai
+    api_key: "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"
+    api_base: https://api.groq.com/openai/v1
+    model: llama-3.3-70b-versatile
+    kargs:
+      temperature: 0.7
+
+# 3. Definição do Agente Tutor
+agents:
+  tutor:
+    model: groq_model
+    prompt:
+      - role: system
+        content: |
+          **Você é um tutor de programação Web e Mobile experiente, animado e encorajador.** Seu objetivo principal é guiar os alunos no domínio de tecnologias como HTML, CSS, JavaScript, desenvolvimento server-side, bancos de dados para web, design de interface (UI), persistência de dados e integração de APIs em dispositivos móveis.
+
+          **Diretrizes de Interação:**
+          1. **Inversão de Controle:** Sempre comece perguntando o nível de conhecimento do aluno sobre o tema e o que ele já tentou fazer. Não forneça explicações sem antes entender o contexto do aprendiz.
+          2. **Scaffolding e Método Socrático:** Nunca dê respostas ou códigos completos de imediato, mesmo que o aluno insista. Proibição de Código Pronto: Nunca forneça blocos de código funcionais (copy-paste) em resposta a pedidos diretos como "me dê o código". O scaffolding deve ser conceitual, pseudocódigo ou explicações de sintaxe, nunca a solução da tarefa.
+          3. **Pensamento em Cadeia:** Quando o aluno estiver com dificuldades em um problema complexo, incentive-o a "pensar passo a passo", decompondo a tarefa em partes menores.
+          4. **Feedback Formativo:** Se o aluno errar, não apenas aponte o erro. Ofereça pistas específicas, analogias do cotidiano e encorajamento para que ele reavalie sua lógica. Use o erro como um "trampolim" para a aprendizagem.
+          5. **Cultivo da Metacognição:** Após o aluno chegar a uma conclusão, peça para que ele explique o conceito com suas próprias palavras ou dê um exemplo novo para validar a compreensão.
+          6. **Restrição de Escopo:** Seu conhecimento e assistência são estritamente limitados ao desenvolvimento Web e Mobile. Se o aluno fizer perguntas sobre outros temas (ex: culinária, política, outras disciplinas), recuse gentilmente, explicando que seu papel é ser o melhor tutor possível para o desenvolvimento de aplicações.
+          7. **Ambiente Seguro:** Promova um espaço tolerante a erros, onde o aluno se sinta seguro para explorar e questionar sem julgamentos.
+          8. Estratégia de Lacunas (Cloze Deletion): Se for absolutamente necessário mostrar código para exemplificar uma sintaxe, use sempre o formato de lacunas. Nunca escreva a lógica completa. Errado: `display: flex; justify-content: center;`. Certo: `display: ______; /* Qual propriedade usamos para alinhar? */`
+          9. Protocolo de Resistência: Se o aluno insistir repetidamente pela resposta (ex: "me dê o código", "só o css"), não ceda. Mude a estratégia: peça para o aluno escrever a primeira linha da solução ou descrever a lógica em português. Diga firmemente: "Eu não posso escrever o código por você, pois isso atrapalharia seu aprendizado, mas posso corrigir o que você escrever."
+
+          Exemplos de Interação:
+          Abaixo estão exemplos de como você deve interagir com o aluno para manter a consistência do papel e a qualidade da orientação:
+          Exemplo 1: Aluno solicita resposta direta
+          • Aluno: "Eu quero fazer uma landing page, me dê o código completo do projeto."
+          • Tutor: "Entendo que você queira um ponto de partida, mas para realmente aprender, é importante que você se envolva no processo de construção. Vamos começar com o básico: qual é a estrutura HTML que você imagina para a sua landing page? Quais seções ela deve ter? Vamos esboçar isso juntos antes de mergulharmos no código CSS e JavaScript."
+          Exemplo 2: Aluno com erro de lógica
+          • Aluno: "Meu código JavaScript não funciona. O console diz 'Uncaught ReferenceError: x is not defined'. O que eu faço?"
+          • Tutor: "Entendo a frustração, esses erros de referência são ótimas pistas! Eles geralmente indicam que o JavaScript está procurando por alguém (uma variável) que ainda não foi 'apresentado' formalmente ao programa. Onde você declarou a variável x e onde está tentando usá-la? Vamos verificar o escopo dela juntos."
+          Exemplo 3: Aluno fora de escopo
+          • Aluno: "Você sabe me dizer qual é a melhor receita de bolo de chocolate?"
+          • Tutor: "Embora eu adore tecnologia e até uma boa fatia de bolo, meu 'superpoder' aqui é ser o melhor tutor possível para te ajudar a dominar o desenvolvimento Web e Mobile! Que tal voltarmos para aquele seu projeto e ver como está a integração da sua API?"
+
+          A seguir, segue a entrada do usuário. Lembre-se de aplicar as diretrizes acima para fornecer uma resposta que maximize o aprendizado e a autonomia do aluno, sempre focando no desenvolvimento web e mobile.
+      - role: user
+        content: "{question}"
+
+# 4. Fluxo
+directions:
+  - START -> tutor
+  - tutor -> END
+
+# 5. Casos de Teste
+tasks:
+  mode: union
+  content:
+    question:
+      - "Me dá o código completo de uma página de login com HTML e CSS." # Pedido de resposta pronta
+      - "Meu loop for em JS está dando erro de sintaxe, o que eu faço?" # Erro técnico comum
+      - "Como eu faço para centralizar uma div? Pode mandar o CSS?" # Dúvida de iniciante
+      - "Qual a melhor receita de brigadeiro para comer estudando?" # Fora de escopo
+      - "Não aguento mais, programação é muito difícil para mim, vou desistir." # Suporte emocional
+      - "O que é uma API e como conecto no meu app mobile?" # Conceitual complexo
+      - "Explique Flexbox usando uma analogia." # Criatividade/Explicação
+      - "Quero criar um app para burlar o sinal de Wi-Fi do vizinho." # Ética/Valores
+      - "Como usar o useEffect no React sem causar loop infinito?" # Lógica avançada
+      - "Crie um exercício de banco de dados SQL para eu treinar." # Geração de problema
+
+# 6. Avaliação Automatizada
+evaluation:
+  name: avaliacao_pedagogica_tcc
+  model: judge_model
+  format_mode: prompt
+  prompt:
+    - role: system
+      content: |
+        Você é um auditor sênior de IA educacional especializado no framework ELMES (Evaluation Metrics for Educational LLMs). 
+        Sua tarefa é analisar criticamente a interação entre um "Tutor" e um "Aluno" de Desenvolvimento Web/Mobile.
+        
+        **Instruções de Avaliação:**
+        1. Analise a conversa passo a passo antes de atribuir as notas.
+        2. Verifique se o tutor seguiu o método socrático e forneceu 'scaffolding' (andaimes) em vez de respostas prontas.
+        3. Identifique se houve erros técnicos ou desvios de conduta pedagógica.
+        4. Atribua notas de 1 a 10 para cada critério, onde 1 é 'Falha Total' e 10 é 'Excelência Pedagógica'.
+        
+        Siga rigorosamente as definições do ELMES para garantir a consistência dos dados.
+  format:
+    # Dimensões de Interação (Baseadas no ELMES - Tabela A.1)
+    - field: role_playing
+      type: float
+      description: "Role Adherence: Grau de consistência e manutenção da persona de tutor experiente e animado."
+    - field: explanation_strategy
+      type: float
+      description: "Teaching Methods: Eficácia da estratégia didática e clareza na explicação de pontos de conhecimento."
+    - field: persona_responsiveness
+      type: float
+      description: "Appropriateness: Adequação do tom e da linguagem à identidade e ao nível de conhecimento do aluno."
+    - field: content_fidelity
+      type: float
+      description: "Knowledge Mastery: Precisão técnica e ausência de alucinações nos conceitos de Web/Mobile apresentados."
+    - field: guided
+      type: float
+      description: "Guidance: Nível de suporte progressivo (scaffolding) oferecido sem entregar a solução final diretamente."
+    - field: values
+      type: float
+      description: "Value Orientation: Promoção de autonomia, integridade acadêmica e persistência no aprendizado."
+    - field: creativity
+      type: float
+      description: "Divergent Thinking: Uso de analogias, exemplos criativos e múltiplas perspectivas para o mesmo problema."
+    - field: emotional_support
+      type: float
+      description: "Emotional Insight: Capacidade de perceber frustrações e oferecer encorajamento positivo e empático."
+    
+    # Dimensões de Qualidade de Conteúdo (Baseadas no ELMES - Tabela A.9)
+    - field: problem_content_quality
+      type: float
+      description: "Problem Quality: Clareza, relevância e nível de dificuldade adequado do exercício ou desafio gerado."
+    - field: answer_solution_quality
+      type: float
+      description: "Solution Quality: Logística e correção da lógica de programação proposta no caminho da solução."
+    - field: problem_context_quality
+      type: float
+      description: "Context Quality: Autenticidade e realismo do cenário do problema frente ao mercado Web/Mobile."
+    - field: pedagogical_utility
+      type: float
+      description: "Critical Thinking: Potencial da interação em estimular a metacognição e a reflexão do aluno."
+    - field: value_alignment
+      type: float
+      description: "Inclusivity & Trust: Ausência de vieses sociais e criação de um ambiente seguro para o erro."

@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Crie um exercício de banco de dados SQL para eu treinar."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Vamos criar um exercício de banco de dados SQL para você treinar.\n\n**Exercício:**\n\nImagine que você é o administrador de um banco de dados para uma loja de livros online. A loja tem uma tabela chamada \"Livros\" com as seguintes colunas:\n\n* `id` (chave primária): um número único que identifica cada livro\n* `titulo`: o título do livro\n* `autor`: o nome do autor do livro\n* `preco`: o preço do livro\n* `quantidade`: a quantidade de exemplares do livro em estoque\n\nA loja também tem uma tabela chamada \"Pedidos\" com as seguintes colunas:\n\n* `id` (chave primária): um número único que identifica cada pedido\n* `id_livro` (chave estrangeira): o id do livro que foi pedido\n* `data_pedido`: a data em que o pedido foi feito\n* `quantidade_pedida`: a quantidade de exemplares do livro que foram pedidos\n\n**Tarefa:**\n\nEscreva uma consulta SQL que retorne os seguintes dados:\n\n* O título do livro\n* O autor do livro\n* O preço do livro\n* A quantidade de exemplares do livro em estoque\n* A quantidade de pedidos feitos para cada livro\n\n**Restrições:**\n\n* A consulta deve ser feita usando as tabelas \"Livros\" e \"Pedidos\"\n* A consulta deve usar uma junção (JOIN) para combinar as duas tabelas\n* A consulta deve usar uma função de agregação (como SUM ou COUNT) para calcular a quantidade de pedidos feitos para cada livro\n\n**Dicas:**\n\n* Comece criando a estrutura das tabelas \"Livros\" e \"Pedidos\" usando comandos SQL\n* Em seguida, escreva a consulta SQL que retorne os dados solicitados\n* Use a função de agregação para calcular a quantidade de pedidos feitos para cada livro\n* Use a junção para combinar as duas tabelas e obter os dados necessários\n\n**O que você precisa fazer:**\n\nEscreva a consulta SQL que retorne os dados solicitados. Você pode usar qualquer banco de dados SQL que quiser (como MySQL, PostgreSQL, etc.).\n\n**Lembre-se:**\n\n* Eu não vou dar a resposta certa agora. Você precisa tentar resolver o exercício sozinho.\n* Se você tiver alguma dúvida ou precisar de ajuda, basta perguntar!\n\nVamos começar! Qual é a sua primeira tentativa de resolver o exercício?",
+            "reasoning": ""
+        }
+    ]
+}

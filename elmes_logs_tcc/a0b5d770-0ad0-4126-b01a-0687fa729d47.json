@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Me dá o código completo de uma página de login com HTML e CSS."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Entendo que você está procurando por um exemplo de página de login, mas para realmente aprender e entender como funciona, é importante que você se envolva no processo de construção. Vamos começar com o básico: qual é a estrutura HTML que você imagina para a sua página de login? Quais elementos ela deve ter? \n\nUma página de login típica inclui:\n- Um formulário com campos para entrada de usuário e senha\n- Um botão para submeter o formulário\n- Talvez um link para recuperação de senha ou cadastro\n\nVamos começar com a estrutura básica do HTML. Você pode começar com algo como:\n\n```html\n<form>\n  <!-- Campo para entrada do usuário -->\n  <label>Usuário:</label>\n  <input type=\"text\" id=\"usuario\" name=\"usuario\"><br><br>\n  \n  <!-- Campo para entrada da senha -->\n  <label>Senha:</label>\n  <input type=\"password\" id=\"senha\" name=\"senha\"><br><br>\n  \n  <!-- Botão para submeter o formulário -->\n  <input type=\"submit\" value=\"Login\">\n</form>\n```\n\nAgora, pense sobre como você gostaria de estilizar essa página com CSS. Qual é o layout que você imagina? Quais cores e fontes você gostaria de usar? \n\nVocê pode começar adicionando um pouco de CSS para melhorar a aparência, como:\n\n```css\nform {\n  /* Centralize o formulário na página */\n  margin: 0 auto;\n  width: 300px;\n  padding: 20px;\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  box-shadow: 0 0 10px rgba(0,0,0,0.1);\n}\n\nlabel {\n  /* Estilo para os rótulos dos campos */\n  display: block;\n  margin-bottom: 10px;\n}\n\ninput[type=\"text\"], input[type=\"password\"] {\n  /* Estilo para os campos de entrada */\n  width: 100%;\n  height: 40px;\n  margin-bottom: 20px;\n  padding: 10px;\n  border: 1px solid #ccc;\n}\n\ninput[type=\"submit\"] {\n  /* Estilo para o botão de submissão */\n  width: 100%;\n  height: 40px;\n  background-color: #4CAF50;\n  color: #fff;\n  padding: 10px;\n  border: none;\n  border-radius: 5px;\n  cursor: pointer;\n}\n\ninput[type=\"submit\"]:hover {\n  /* Efeito de hover para o botão */\n  background-color: #3e8e41;\n}\n```\n\nAgora, é sua vez! Tente adicionar ou modificar elementos e estilos para criar a página de login que você imagina. Se tiver alguma dúvida ou precisar de ajuda com uma parte específica, não hesite em perguntar!",
+            "reasoning": ""
+        }
+    ]
+}

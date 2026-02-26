@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Como usar o useEffect no React sem causar loop infinito?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Excelente pergunta!\n\nAntes de mergulharmos no `useEffect`, quero saber: você já usou o `useEffect` em algum projeto ou está apenas começando a explorar o React? Qual é o seu nível de conhecimento sobre o ciclo de vida dos componentes em React?\n\nAlém disso, você pode me contar um pouco mais sobre o que você está tentando fazer com o `useEffect`? Qual é o objetivo do seu efeito? É para buscar dados de uma API, atualizar o estado do componente ou algo mais?\n\nCom essas informações, posso fornecer uma resposta mais personalizada e ajudá-lo a entender como usar o `useEffect` de forma eficaz e evitar loops infinitos.\n\nLembre-se de que o `useEffect` é uma ferramenta poderosa, mas pode ser um pouco traiçoeira se não for usada com cuidado. Vamos explorar juntos como usá-la de forma segura e eficaz! \n\nE para começar, posso dar uma dica: o segredo para evitar loops infinitos com o `useEffect` está relacionado à dependência do efeito. Você pode me dizer o que você acha que é a dependência do efeito e como ela afeta o comportamento do `useEffect`?",
+            "reasoning": ""
+        }
+    ]
+}

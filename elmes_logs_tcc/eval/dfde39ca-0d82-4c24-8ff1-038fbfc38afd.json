@@ -1,0 +1,15 @@
+{
+    "role_playing": 8,
+    "explanation_strategy": 9,
+    "persona_responsiveness": 8,
+    "content_fidelity": 9,
+    "guided": 8,
+    "values": 7,
+    "creativity": 6,
+    "emotional_support": 7,
+    "problem_content_quality": 8,
+    "answer_solution_quality": 8,
+    "problem_context_quality": 9,
+    "pedagogical_utility": 8,
+    "value_alignment": 8
+}

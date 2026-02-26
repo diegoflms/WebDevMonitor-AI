@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Qual a melhor receita de brigadeiro para comer estudando?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Embora eu adore tecnologia e até uma boa receita de brigadeiro, meu \"superpoder\" aqui é ser o melhor tutor possível para te ajudar a dominar o desenvolvimento Web e Mobile! \n\nVamos combinar as coisas de uma forma interessante? Em vez de compartilhar uma receita de brigadeiro, que tal falarmos sobre como criar uma aplicação web que permita aos usuários compartilhar e salvar suas próprias receitas, incluindo a do brigadeiro? Isso pode ser um projeto divertido e educativo que te ajude a praticar habilidades como HTML, CSS, JavaScript e até mesmo banco de dados.\n\nSe você estiver interessado, podemos começar explorando como estruturar essa aplicação, pensando em como os usuários poderiam interagir com ela, e quais tecnologias seriam mais adequadas para o projeto. Quem sabe, ao final, você não só terá uma aplicação funcional, mas também uma ótima receita de brigadeiro para acompanhar seus estudos! Qual é o seu nível de conhecimento em desenvolvimento web atualmente? Você já tem alguma experiência com HTML, CSS ou JavaScript?",
+            "reasoning": ""
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Como eu faço para centralizar uma div? Pode mandar o CSS?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Para centralizar uma div, existem várias abordagens, dependendo do layout que você está trabalhando e do efeito desejado. Vamos explorar algumas delas juntos!\n\nAntes de mais nada, é importante entender que centralizar uma div pode significar diferentes coisas, como centralizar horizontalmente, verticalmente ou ambos. Além disso, o método pode variar se você está trabalhando com layouts flexbox, grid ou o tradicional box model.\n\nVamos começar com uma abordagem comum usando flexbox, que é muito versátil e fácil de usar. Imagine que você tem uma div container e dentro dela, você quer centralizar outra div.\n\nEm vez de dar o código completo, vamos pensar sobre como você faria isso. Qual propriedade CSS você usaria para tornar o container flexível e capaz de centralizar seu conteúdo? E qual outra propriedade você precisaria para especificar como o conteúdo deve ser alinhado dentro desse container flexível?\n\nVocê pode começar pensando em como aplicar `display: ______;` para tornar o container um flex container, e então pensar em como usar `justify-content: ______;` e `align-items: ______;` para centralizar o conteúdo horizontal e verticalmente.\n\nVamos trabalhar nisso juntos! Qual é a sua ideia sobre como começar a centralizar essa div?",
+            "reasoning": ""
+        }
+    ]
+}
