@@ -1,6 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 import uuid
+import random
 from sheets import add_rows_to_sheet, build_list_to_sheet, init_google_sheets
 
 def save_feedback(index, tab):
@@ -19,14 +20,31 @@ def click_question(question):
     """Função utilitária para lidar com o clique em uma pergunta pré-definida na sidebar, atualizando o estado para que a pergunta seja processada como input do usuário."""
     st.session_state.clicked_question = question
 
-@st.cache_resource # Garante que a conexão com OpenAI e Sheets só aconteça UMA vez
+@st.cache_resource
 def load_connections():
-    """Inicializa as conexões com OpenAI e Google Sheets, retornando os objetos de cliente e aba."""
+    """Sorteia uma entre 10 chaves de API e inicializa as conexões. O cache garante que esse sorteio só ocorra uma vez por reinicialização do servidor.
+    """
+    numero_sorteado = random.randint(1, 10) # 1. Sorteio do número da chave
+    nome_da_chave = f"GROQ_API_KEY_{numero_sorteado}"
+    
+    try: # 2. Busca a chave sorteada nos segredos
+        api_key = st.secrets[nome_da_chave]
+    except Exception: # Caso não tenha uma chave cadastrada
+        st.error(f"Erro Crítico: A chave {nome_da_chave} não foi configurada!")
+        st.stop()
+
+    # 3. Inicializa o Cliente OpenAI (Groq) com a chave da vez
     client = OpenAI(
         base_url="https://api.groq.com/openai/v1",
-        api_key=st.secrets["GROQ_API_KEY"]
+        api_key=api_key
     )
+    
+    # 4. Inicializa o Google Sheets
     tab = init_google_sheets()
+    
+    # Log interno para você saber qual chave o servidor pegou (visível nos logs do Render)
+    print(f"--- Conexão estabelecida usando a chave: {nome_da_chave} ---")
+    
     return client, tab
 
 def init_session_state():
