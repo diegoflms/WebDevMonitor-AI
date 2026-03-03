@@ -1,5 +1,5 @@
 import streamlit as st
-from styles import get_login_styles
+from src.constants.styles import get_login_styles
 
 def login_screen(CORRECT_PASSWORD):
     """Renderiza a tela de login e gerencia a autenticação."""

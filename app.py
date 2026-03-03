@@ -1,10 +1,10 @@
 import streamlit as st
 import uuid
-from texts import *
-from utils import *
-from interface import *
-from sheets import *
-from styles import *
+from src.constants.texts import *
+from src.services.utils import *
+from src.components.interface import *
+from src.services.sheets import *
+from src.constants.styles import *
 
 # --- CONFIGURAÇÃO INICIAL ---
 init_session_state() # Garante que as variáveis de estado existam antes de qualquer coisa

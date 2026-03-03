@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 import uuid
-from sheets import add_rows_to_sheet, build_list_to_sheet, init_google_sheets
+from src.services.sheets import add_rows_to_sheet, build_list_to_sheet, init_google_sheets
 
 def save_feedback(index, tab):
     """Salva o feedback do usuário para uma mensagem específica, atualizando o estado da mensagem e registrando a avaliação no Google Sheets."""
