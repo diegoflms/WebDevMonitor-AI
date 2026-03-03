@@ -52,33 +52,22 @@ def get_main_styles():
     [data-testid="stChatMessageAvatarAssistant"] {{ background-color: {ORANGE} !important; }}
     [data-testid="stChatMessageAvatarUser"] {{ background-color: {BLUE} !important; }}
 
-    /* 6. Snippet do Fórum */
-    div[data-testid="stToolbar"] {{
-        visibility: hidden;
-        height: 0%;
-        position: fixed;
-    }}
-    div[data-testid="stDecoration"] {{
-    visibility: hidden;
-    height: 0%;
-    position: fixed;
-    }}
-    div[data-testid="stStatusWidget"] {{
-    visibility: hidden;
-    height: 0%;
-    position: fixed;
-    }}
-    #MainMenu {{
-    visibility: hidden;
-    height: 0%;
-    }}
+    /* 6. Limpeza da barra superior sem matar o botão da Sidebar */
     header {{
-    visibility: hidden;
-    height: 0%;
+        background-color: transparent !important; /* Deixa o fundo invisível */
     }}
-    footer {{
-    visibility: hidden;
-    height: 0%;
+    
+    /* Esconde o botão de Deploy e o Menu de 3 pontos especificamente */
+    .stDeployButton, [data-testid="stMainMenu"] {{
+        display: none !important;
+    }}
+
+    /* Garante que o botão de abrir a sidebar fique visível e com a cor certa */
+    [data-testid="stSidebarCollapsedControl"] {{
+        color: #000000 !important; /* Ou a cor que você preferir */
+        background-color: rgba(255, 255, 255, 0.5); /* Um fundinho leve pra aparecer no chat */
+        border-radius: 5px;
+        margin-left: 10px;
     }}
 </style>
 """
