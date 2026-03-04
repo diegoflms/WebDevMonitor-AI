@@ -12,7 +12,7 @@ globals:
 models:
   groq_model: # O Tutor
     type: openai
-    api_key: "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"
+    api_key: ""
     api_base: https://api.groq.com/openai/v1
     model: llama-3.3-70b-versatile
     kargs:
@@ -20,7 +20,7 @@ models:
 
   judge_model: # O Juiz Crítico
     type: openai
-    api_key: "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"
+    api_key: ""
     api_base: https://api.groq.com/openai/v1
     model: llama-3.3-70b-versatile
     kargs:
