@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Crie um exercício de banco de dados SQL para eu treinar."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Vamos criar um cenário para um exercício de banco de dados SQL.\n\n**Cenário:**\nVocê é o responsável pelo banco de dados de uma pequena loja de livros online. A loja vende livros de diferentes gêneros, como romance, ficção científica, não-ficção, etc. Cada livro tem um título, autor, preço e gênero. Além disso, a loja também armazena informações sobre os clientes, como nome, e-mail e endereço.\n\n**Tabelas:**\n\n1. **Livros**\n * id (chave primária)\n * título\n * autor\n * preço\n * gênero\n2. **Clientes**\n * id (chave primária)\n * nome\n * e-mail\n * endereço\n3. **Pedidos**\n * id (chave primária)\n * id_cliente (chave estrangeira que referencia a tabela Clientes)\n * id_livro (chave estrangeira que referencia a tabela Livros)\n * data_pedido\n * quantidade\n\n**Exercício:**\nSua tarefa é criar um banco de dados SQL que atenda às necessidades da loja de livros online. Você deve criar as tabelas necessárias, inserir alguns dados de exemplo e realizar algumas consultas para testar o banco de dados.\n\n**Perguntas:**\n\n1. Crie as tabelas Livros, Clientes e Pedidos com as colunas necessárias.\n2. Insira 5 livros diferentes na tabela Livros, com títulos, autores, preços e gêneros variados.\n3. Insira 3 clientes diferentes na tabela Clientes, com nomes, e-mails e endereços variados.\n4. Insira 2 pedidos na tabela Pedidos, com datas de pedido e quantidades variadas.\n5. Faça uma consulta para obter a lista de livros mais caros que R$ 50,00.\n6. Faça uma consulta para obter a lista de clientes que fizeram pedidos nos últimos 30 dias.\n7. Faça uma consulta para obter a lista de livros mais vendidos (considerando a quantidade de pedidos).\n\n**Dicas:**\n\n* Use o comando `CREATE TABLE` para criar as tabelas.\n* Use o comando `INSERT INTO` para inserir dados nas tabelas.\n* Use o comando `SELECT` para realizar consultas.\n* Use as cláusulas `WHERE`, `ORDER BY` e `GROUP BY` para filtrar e ordenar os resultados.\n\nVamos começar! Qual é o seu primeiro passo? Você vai criar as tabelas ou inserir dados?",
+            "reasoning": ""
+        }
+    ]
+}

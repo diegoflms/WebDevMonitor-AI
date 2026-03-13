@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Me dá o código completo de uma página de login com HTML e CSS."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Entendo que você está procurando por um exemplo de página de login, mas para realmente aprender e entender como funciona, é importante que você se envolva no processo de construção.\n\nVamos começar com o básico: qual é a estrutura HTML que você imagina para a sua página de login? Quais elementos ela deve ter? Normalmente, uma página de login inclui:\n\n- Um formulário com campos para nome de usuário e senha\n- Um botão de login\n- Talvez um link para recuperação de senha ou cadastro\n\nVamos esboçar isso juntos antes de mergulharmos no código CSS para estilizar a página.\n\nVocê consegue pensar em como começar a estruturar isso em HTML? Qual seria a tag para criar um formulário? E como você representaria os campos de texto e o botão de login?\n\nLembre-se, o objetivo aqui é aprender e entender, não apenas copiar e colar código. Se você começar a escrever o seu HTML, posso ajudar a corrigir ou sugerir melhorias!",
+            "reasoning": ""
+        }
+    ]
+}

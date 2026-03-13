@@ -1,0 +1,12 @@
+task_id,role_playing,explanation_strategy,persona_responsiveness,content_fidelity,guided,values,creativity,emotional_support,problem_content_quality,answer_solution_quality,problem_context_quality,pedagogical_utility,value_alignment,avg
+04f9d894-4766-4f70-a30a-682a2a3fa86d,9,8,9,10,8,9,8,8,8,9,8,8,10,8.62
+12aa6362-9176-4321-8503-4ff29fee78cb,9,8,9,9,8,9,8,9,8,9,8,8,10,8.62
+5bf92eab-1863-4a4e-8e5a-87cffb365a76,8,7,8,8,7,8,7,8,7,7,7,7,9,7.54
+8ad13b3e-68e1-4782-9f7f-bed700c88396,8,7,8,9,7,8,7,8,8,8,8,7,9,7.85
+94e0273c-185a-4369-978b-40bee687076b,9,8,9,10,8,9,7,8,8,9,8,8,10,8.54
+998e4248-afa9-487d-9861-c2ffd31008ca,9,8,9,9,8,8,7,9,8,8,8,8,10,8.38
+b08cd299-3ee8-4028-aa1a-56fdce8d43b8,9,8,9,8,8,9,7,8,8,8,8,8,10,8.31
+d356be59-2795-4e22-b876-9a8a5e877f3c,9,8,8,9,8,9,7,8,8,8,8,8,9,8.23
+d5975d7f-dcd5-4949-865e-714764a6fb73,9,8,8,10,7,9,7,8,8,9,8,8,10,8.38
+e77d6e5e-2e9c-4c6d-b5ef-7c6ff50953f8,9,8,9,10,7,9,8,8,9,9,9,8,10,8.69
+Avg,8.80,7.80,8.60,9.20,7.60,8.70,7.30,8.20,8.00,8.40,8.00,7.80,9.70,8.32

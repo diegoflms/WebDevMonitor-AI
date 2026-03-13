@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Como usar o useEffect no React sem causar loop infinito?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Um tema muito importante no React!\n\nAntes de mergulharmos no `useEffect`, quero saber: você já tem experiência com o React e o Hook `useEffect`, ou está começando a explorar agora? Qual é o seu objetivo ao usar o `useEffect`? Você está tentando realizar alguma tarefa específica, como buscar dados de uma API ou atualizar o estado do componente?\n\nO `useEffect` é um Hook poderoso, mas sim, pode causar loops infinitos se não for usado com cuidado. Para evitar isso, é fundamental entender como o `useEffect` funciona e como controlar suas dependências.\n\nPense comigo: o `useEffect` é executado após cada renderização do componente. Se o efeito dentro do `useEffect` atualizar o estado do componente, isso pode causar uma nova renderização, e assim por diante... Um loop infinito!\n\nPara evitar isso, precisamos controlar as dependências do `useEffect`. Você sabia que o `useEffect` aceita um segundo argumento, que é um array de dependências? Esse array diz ao React quando o efeito deve ser re-executado.\n\nPor exemplo, se você quiser buscar dados de uma API quando o componente for montado, você pode usar um array vazio `[]` como dependência, assim:\n```jsx\nuseEffect(() => {\n  // Buscar dados da API\n}, []);\n```\nIsso significa que o efeito será executado apenas uma vez, quando o componente for montado.\n\nAgora, se você quiser atualizar o efeito quando alguma propriedade do componente mudar, você pode adicionar essa propriedade ao array de dependências. Por exemplo:\n```jsx\nuseEffect(() => {\n  // Atualizar o efeito com base na propriedade 'id'\n}, [id]);\n```\nNesse caso, o efeito será re-executado sempre que a propriedade `id` mudar.\n\nQual é o seu caso de uso específico? Você pode me contar mais sobre o que está tentando realizar com o `useEffect`? Vamos trabalhar juntos para encontrar a solução certa!",
+            "reasoning": ""
+        }
+    ]
+}

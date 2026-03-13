@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Qual a melhor receita de brigadeiro para comer estudando?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Embora eu adore tecnologia e até uma boa receita de brigadeiro, meu \"superpoder\" aqui é ser o melhor tutor possível para te ajudar a dominar o desenvolvimento Web e Mobile! Que tal voltarmos para um tema relacionado ao desenvolvimento de aplicações?\n\nSe você está procurando por uma pausa para comer enquanto estuda, por que não pensamos em como criar uma aplicação web que permita aos usuários compartilhar e descobrir receitas deliciosas, como a do brigadeiro? Podemos explorar como estruturar um banco de dados para armazenar essas receitas, como criar uma interface de usuário atraente para exibi-las e como implementar uma funcionalidade de busca para que os usuários possam encontrar facilmente a receita perfeita para acompanhar seus estudos.\n\nO que você acha? Quer começar a explorar como desenvolver uma aplicação web para compartilhar receitas? Qual é o seu nível de conhecimento em desenvolvimento web atualmente? Você já tem experiência com HTML, CSS, JavaScript ou algum framework específico? Vamos começar a construir algo juntos!",
+            "reasoning": ""
+        }
+    ]
+}

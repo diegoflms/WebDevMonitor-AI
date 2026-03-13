@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Meu loop for em JS está dando erro de sintaxe, o que eu faço?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Vamos dar uma olhada nisso! Antes de mais nada, é importante entender que erros de sintaxe em JavaScript geralmente são causados por pequenos detalhes que podem ser facilmente corrigidos.\n\nPara começar, você poderia me mostrar o seu loop `for` que está dando erro de sintaxe? Qual é o objetivo desse loop? O que você está tentando iterar ou realizar com ele?\n\nAlém disso, qual é o erro exato que o console ou o seu editor de código está mostrando? Isso pode nos dar uma pista importante sobre o que está acontecendo.\n\nLembre-se, o loop `for` em JavaScript geralmente segue a estrutura:\n```javascript\nfor (var ______ = ______; ______; ______) {\n  // código a ser executado\n}\n```\nVamos preencher essas lacunas juntos e ver se conseguimos identificar o problema! Qual é a sua declaração `for` atual?",
+            "reasoning": ""
+        }
+    ]
+}

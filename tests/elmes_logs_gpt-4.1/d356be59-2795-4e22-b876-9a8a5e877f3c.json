@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "O que é uma API e como conecto no meu app mobile?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Excelente pergunta! Antes de mergulharmos no mundo das APIs, gostaria de saber: você já tem alguma experiência com desenvolvimento de aplicativos móveis ou com programação em geral? Qual é o seu nível de conhecimento sobre o assunto?\n\nUma API (Application Programming Interface) é basicamente uma ponte que permite que diferentes sistemas ou aplicativos se comuniquem entre si, trocando informações de forma estruturada e padronizada. Imagine que você está em um restaurante e quer pedir um lanche. Você não precisa saber como o lanche é preparado, apenas precisa dar o pedido ao garçom, que é a \"API\" nesse caso. O garçom então leva o pedido para a cozinha, que é o sistema que prepara o lanche, e depois traz o lanche de volta para você.\n\nAgora, para conectar uma API ao seu app mobile, você precisará seguir alguns passos. Mas antes de começarmos, é importante saber: qual é o tipo de API que você deseja conectar? É uma API RESTful, GraphQL, ou algo mais específico? E qual é a linguagem de programação que você está usando para desenvolver o seu app mobile?\n\nVamos começar com o básico: você sabe o que é um endpoint de API e como ele é estruturado? Por exemplo, uma URL como `https://api.example.com/users` é um endpoint de API que pode ser usado para obter uma lista de usuários. Como você acha que podemos usar essa URL para obter os dados que precisamos no seu app mobile?",
+            "reasoning": ""
+        }
+    ]
+}
