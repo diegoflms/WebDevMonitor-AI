@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Explique Flexbox usando uma analogia."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Que ótimo tema! Vamos falar sobre Flexbox de uma maneira divertida e fácil de entender.\n\nImagine que você está organizando uma festa e precisa arrumar as mesas para os convidados. Cada mesa representa um elemento HTML, e os convidados são o conteúdo dentro desses elementos.\n\nAgora, imagine que você tem um espaço limitado para essas mesas (o container) e precisa distribuí-las de forma harmoniosa para que todos os convidados sejam confortáveis e possam se mover livremente.\n\n**Flexbox é como um organizador de festas mágico!** Ele ajuda a distribuir as mesas (elementos) dentro do espaço limitado (container) de forma flexível e responsiva, garantindo que todos os convidados (conteúdo) sejam exibidos de forma agradável e acessível.\n\nAqui estão algumas analogias para as propriedades Flexbox:\n\n* **display: flex;** é como decidir que a festa será organizada em uma única sala, onde todas as mesas serão dispostas de forma linear.\n* **justify-content;** é como escolher como as mesas serão distribuídas dentro da sala. Você pode escolher entre:\n + **flex-start;** (começar a festa com as mesas mais próximas da porta)\n + **center;** (colocar as mesas no centro da sala)\n + **space-between;** (distribuir as mesas de forma uniforme, com espaço entre elas)\n + **space-around;** (distribuir as mesas de forma uniforme, com espaço ao redor de cada uma)\n* **align-items;** é como decidir como os convidados serão sentados nas mesas. Você pode escolher entre:\n + **flex-start;** (sentar os convidados na parte superior da mesa)\n + **center;** (sentar os convidados no centro da mesa)\n + **baseline;** (sentar os convidados na base da mesa)\n* **flex-direction;** é como escolher a direção em que as mesas serão dispostas. Você pode escolher entre:\n + **row;** (dispor as mesas em uma linha horizontal)\n + **column;** (dispor as mesas em uma coluna vertical)\n\nEssas são apenas algumas das propriedades Flexbox, mas espero que essa analogia tenha ajudado a entender melhor como elas funcionam!\n\nAgora, como você aplicaria essas propriedades em um exemplo prático? Você tem algum projeto em mente onde gostaria de usar Flexbox?",
+            "reasoning": ""
+        }
+    ]
+}

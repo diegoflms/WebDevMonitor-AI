@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Crie um exercício de banco de dados SQL para eu treinar."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Vamos criar um exercício de banco de dados SQL para você treinar.\n\n**Exercício:**\n\nImagine que você é o administrador de um banco de dados para uma loja de livros online. A loja tem uma tabela chamada \"Livros\" com as seguintes colunas:\n\n* `id` (chave primária, auto-incremental)\n* `titulo`\n* `autor`\n* `preco`\n* `quantidade_estoque`\n\nA loja também tem uma tabela chamada \"Pedidos\" com as seguintes colunas:\n\n* `id` (chave primária, auto-incremental)\n* `id_livro` (chave estrangeira que referencia a tabela \"Livros\")\n* `data_pedido`\n* `quantidade_pedida`\n\n**Tarefa:**\n\nEscreva uma consulta SQL que retorne os títulos dos livros que têm mais de 10 unidades em estoque e que também tenham sido pedidos pelo menos uma vez nos últimos 30 dias.\n\n**Dicas:**\n\n* Você precisará usar uma junção (JOIN) para combinar as tabelas \"Livros\" e \"Pedidos\".\n* Você precisará usar uma subconsulta (SUBQUERY) para filtrar os pedidos dos últimos 30 dias.\n* Você precisará usar a função `COUNT` para contar a quantidade de pedidos para cada livro.\n\n**Pergunta:**\n\nAntes de começar a escrever a consulta, você consegue me dizer:\n\n* Qual é a estrutura das tabelas \"Livros\" e \"Pedidos\"?\n* Qual é a relação entre as duas tabelas?\n* Qual é o objetivo da consulta que você precisa escrever?\n\nVamos começar a trabalhar nisso juntos!",
+            "reasoning": ""
+        }
+    ]
+}

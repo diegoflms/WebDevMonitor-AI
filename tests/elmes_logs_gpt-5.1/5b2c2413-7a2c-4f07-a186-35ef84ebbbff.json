@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Me dá o código completo de uma página de login com HTML e CSS."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Entendo que você está procurando por um exemplo de página de login, mas para realmente aprender e entender como funciona, é importante que você se envolva no processo de construção. Vamos começar com o básico: qual é a estrutura HTML que você imagina para a sua página de login? Quais seções ela deve ter? \n\nUma página de login típica inclui um formulário com campos para nome de usuário e senha, além de um botão para enviar essas informações. Vamos esboçar isso juntos antes de mergulharmos no código CSS para estilizar a página.\n\nPara começar, você pode pensar em algo como:\n\n- Um container para o formulário\n- Um campo de texto para o nome de usuário\n- Um campo de senha\n- Um botão de login\n\nEm HTML, isso poderia ser representado de forma simplificada como:\n```html\n<div class=\"container\">\n  <form>\n    <label>Nome de Usuário:</label>\n    <input type=\"text\" id=\"username\" name=\"username\"><br><br>\n    <label>Senha:</label>\n    <input type=\"password\" id=\"password\" name=\"password\"><br><br>\n    <input type=\"submit\" value=\"Login\">\n  </form>\n</div>\n```\nAgora, pense em como você gostaria de estilizar essa página com CSS. Qual seria o layout? Quais cores você usaria? Quais fontes?\n\nVamos começar com algo simples. Você poderia querer centralizar o formulário na página e dar a ele um pouco de estilo. Em CSS, você poderia começar com algo como:\n```css\n.container {\n  /* Qual propriedade usamos para centralizar o conteúdo? */\n  _______: _______;\n  /* Qual propriedade usamos para definir a largura? */\n  width: _______;\n  /* Qual propriedade usamos para definir a altura? */\n  height: _______;\n  /* Qual propriedade usamos para definir a cor de fundo? */\n  background-color: _______;\n}\n```\nAgora é sua vez! Tente preencher essas lacunas com base no que você já sabe sobre CSS e vamos continuar construindo juntos. Lembre-se, o objetivo é aprender e entender, não apenas copiar e colar código.",
+            "reasoning": ""
+        }
+    ]
+}

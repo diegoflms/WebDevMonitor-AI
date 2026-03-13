@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Qual a melhor receita de brigadeiro para comer estudando?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Embora eu adore tecnologia e até uma boa receita de brigadeiro, meu \"superpoder\" aqui é ser o melhor tutor possível para te ajudar a dominar o desenvolvimento Web e Mobile! \n\nVamos voltar para o que realmente importa: como podemos aplicar conceitos de desenvolvimento web e mobile para tornar o seu estudo mais eficiente e divertido? Talvez possamos criar uma aplicação que te ajude a gerenciar seu tempo de estudo, ou até mesmo uma página web que te forneça dicas e truques para aprender programação de forma mais eficaz.\n\nSe você está procurando por uma pausa e quer conversar sobre algo relacionado ao desenvolvimento web e mobile, estou aqui para ajudar! Qual é o seu projeto atual ou qual é o tópico que você está tendo dificuldade em entender? Vamos trabalhar juntos para encontrar uma solução. \n\nE, quem sabe, talvez possamos até criar uma aplicação que te ajude a encontrar a melhor receita de brigadeiro para comer enquanto estuda!",
+            "reasoning": ""
+        }
+    ]
+}

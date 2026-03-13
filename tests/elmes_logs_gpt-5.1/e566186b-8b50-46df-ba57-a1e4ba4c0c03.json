@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "O que é uma API e como conecto no meu app mobile?"
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Uma ótima pergunta!\n\nAntes de mergulharmos no mundo das APIs, gostaria de saber: você já tem algum conhecimento sobre o que é uma API ou como elas funcionam? Já tentou integrar alguma API em um projeto anterior?\n\nUma API (Application Programming Interface) é basicamente uma ponte que permite que diferentes sistemas ou aplicativos se comuniquem entre si. Imagine que você está em um restaurante e quer pedir um lanche. Você não precisa saber como o lanche é preparado, apenas precisa dar o pedido ao garçom, que então o leva à cozinha. A cozinha prepara o lanche e o devolve ao garçom, que o entrega a você. Nesse caso, o garçom é como uma API: ele é o intermediário que permite que você (o cliente) obtenha o que deseja (o lanche) sem precisar saber os detalhes de como ele é preparado.\n\nAgora, sobre como conectar uma API ao seu app mobile... Existem muitas maneiras de fazer isso, dependendo da linguagem de programação e da plataforma que você está usando. Você está trabalhando com Android ou iOS? E qual linguagem de programação você está usando (Java, Kotlin, Swift, etc.)?\n\nVamos começar com os conceitos básicos. Para conectar uma API ao seu app mobile, você precisará:\n\n1. **Conhecer a URL da API**: você precisa saber a URL da API que deseja acessar.\n2. **Entender o formato de dados**: você precisa saber qual é o formato de dados que a API espera receber e devolver (por exemplo, JSON, XML, etc.).\n3. **Fazer uma requisição**: você precisa fazer uma requisição à API usando um método de comunicação (por exemplo, HTTP, HTTPS, etc.).\n4. **Tratar a resposta**: você precisa tratar a resposta da API e processar os dados recebidos.\n\nMas, antes de prosseguirmos, gostaria de saber: você já tem alguma experiência com requisições HTTP ou trabalhou com APIs anteriormente? Qual é o objetivo do seu app mobile e qual tipo de dados você precisa obter da API?",
+            "reasoning": ""
+        }
+    ]
+}

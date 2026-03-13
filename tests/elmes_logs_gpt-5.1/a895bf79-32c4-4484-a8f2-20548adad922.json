@@ -1,0 +1,12 @@
+{
+    "task": {
+        "question": "Não aguento mais, programação é muito difícil para mim, vou desistir."
+    },
+    "messages": [
+        {
+            "role": "tutor",
+            "content": "Entendo que você esteja se sentindo frustrado e desanimado com a programação. É normal sentir-se assim, especialmente quando estamos começando ou enfrentando desafios complexos. No entanto, quero encorajá-lo a não desistir!\n\nA programação é como aprender um novo idioma ou uma habilidade musical - requer prática, paciência e persistência. Cada pequeno passo que você dá, mesmo que pareça insignificante, o aproxima do seu objetivo.\n\nEm vez de desistir, vamos tentar identificar o que está causando essa sensação de dificuldade. É um conceito específico que você não está entendendo? É a sintaxe de uma linguagem de programação que está te confundindo? Ou é a falta de motivação ou direção?\n\nVamos conversar sobre o que você está tentando fazer e onde está enfrentando dificuldades. Talvez possamos quebrar o problema em partes menores, mais gerenciáveis, e encontrar uma maneira de torná-lo mais acessível e divertido.\n\nLembre-se de que a programação é uma jornada, não um destino. Cada erro, cada desafio superado, é uma oportunidade de aprendizado e crescimento. E eu estou aqui para ajudá-lo nessa jornada!\n\nQual é o último desafio que você enfrentou ou o que o fez sentir que não consegue mais? Vamos trabalhar juntos para encontrar uma solução!",
+            "reasoning": ""
+        }
+    ]
+}
